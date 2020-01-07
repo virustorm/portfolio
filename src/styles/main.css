@@ -9,17 +9,18 @@
       -ms-flex-align: center;
           align-items: center;
   height: 100vh;
-  padding: 0 2.5%;
   text-transform: capitalize;
   background-image: url("../assets/images/jan-pultin-wZUNDmWMvf0-unsplash.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  position: relative;
 }
 
-.mainpage img {
+.mainpage-arrow {
   height: 30px;
   width: 30px;
+  padding: 0 2.5%;
 }
 
 .mainpage-centerDiv h1 {
@@ -27,9 +28,82 @@
   color: white;
 }
 
+.mainpage-indicatorDiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  bottom: 5vh;
+  width: 100vw;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.mainpage-indicator {
+  height: 10px;
+  width: 10px;
+  background-color: white;
+  border-radius: 50%;
+  margin: 0 2px;
+}
+
+.mainpage__p2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  text-transform: capitalize;
+  background-image: url("../assets/images/jan-pultin-wZUNDmWMvf0-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+
+.mainpage__p2-workImg {
+  height: 200px;
+  width: 200px;
+}
+
+.mainpage__p2-title {
+  color: white;
+  position: absolute;
+  top: 10vh;
+  width: 100vw;
+  text-align: center;
+  left: 0;
+}
+
+.mainpage__p2-arrow {
+  height: 30px;
+  width: 30px;
+  padding: 0 2.5%;
+}
+
+.mainpage__p2-middleDiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  width: 70vw;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 html,
 body {
   margin: 0;
   padding: 0;
+  overflow: hidden;
 }
 /*# sourceMappingURL=main.css.map */
