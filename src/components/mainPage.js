@@ -3,6 +3,7 @@ import ArrowLeft from '../assets/images/arrow-left-solid.svg';
 import ArrowRight from '../assets/images/arrow-right-solid.svg';
 import iexPic from '../assets/images/iex.png';
 import AerocarPic from '../assets/images/aerocar.png';
+import profilePic from '../assets/images/Kevin_Wang_WD.jpg';
 
 export default class mainPage extends Component {
 	constructor(props) {
@@ -39,7 +40,7 @@ export default class mainPage extends Component {
 					</div>
 					<img className="mainpage-arrow" src={ArrowRight} alt="arrow" onClick={this.arrowRight} />
 					<div className="mainpage-indicatorDiv">
-						<div className="mainpage-indicator" />
+						<div className="mainpage-onIndicator" />
 						<div className="mainpage-indicator" />
 						<div className="mainpage-indicator" />
 					</div>
@@ -68,7 +69,7 @@ export default class mainPage extends Component {
 					<img className="mainpage-arrow" src={ArrowRight} alt="arrow" onClick={this.arrowRight} />
 					<div className="mainpage-indicatorDiv">
 						<div className="mainpage-indicator" />
-						<div className="mainpage-indicator" />
+						<div className="mainpage-onIndicator" />
 						<div className="mainpage-indicator" />
 					</div>
 				</div>
@@ -77,14 +78,21 @@ export default class mainPage extends Component {
 			return (
 				<div className="mainpage">
 					<img className="mainpage-arrow" src={ArrowLeft} alt="arrow" onClick={this.arrowLeft} />
-					<div className="mainpage-centerDiv">
-						<h1> Contact Me</h1>
+					<h1 className="mainpage-aboutMeTitle"> About Me</h1>
+					<div className="mainpage-aboutMeDiv">
+						<img src={profilePic} alt="profile" className="mainpage-profilePic" />
+						<section className="mainpage-aboutMeText">
+							Hey there ! I am Kevin Wang, I am a Full Stack Web Developer located in Vancouver BC. I am
+							super passionate about applying my knowledge on to everyaspect of my developer career.
+							Everyday I am excited to sit down and learn something new and imporve my skill. Let's make
+							something special together!
+						</section>
 					</div>
 					<img className="mainpage-arrow" src={ArrowRight} alt="arrow" onClick={this.arrowRight} />
 					<div className="mainpage-indicatorDiv">
 						<div className="mainpage-indicator" />
 						<div className="mainpage-indicator" />
-						<div className="mainpage-indicator" />
+						<div className="mainpage-onIndicator" />
 					</div>
 				</div>
 			);
