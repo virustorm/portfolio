@@ -49,14 +49,21 @@ export default class mainPage extends Component {
 			return (
 				<div className="mainpage__p2">
 					<img className="mainpage-arrow" src={ArrowLeft} alt="arrow" onClick={this.arrowLeft} />
-					<h1 className="mainpage__p2-title">Browse my work!</h1>
+					<h1 className="mainpage__p2-title">Projects i have done</h1>
+					<h1 className="mainpage__p2-title2">Projects i am working on</h1>
+
 					<div className="mainpage__p2-middleDiv">
-						<a href="https://virustorm.github.io/iex/">
-							<img className="mainpage__p2-workImg" src={iexPic} alt="iex" />
-						</a>
-						<a href="https://aerocar.herokuapp.com">
-							<img className="mainpage__p2-workImg" src={AerocarPic} alt="aerocar" />
-						</a>
+						<div className="mainpage__p2-doneDiv">
+							<a href="https://virustorm.github.io/iex/">
+								<img className="mainpage__p2-workImg" src={iexPic} alt="iex" />
+							</a>
+							<a href="https://aerocar.herokuapp.com">
+								<img className="mainpage__p2-workImg" src={AerocarPic} alt="aerocar" />
+							</a>
+						</div>
+						<div>
+							<a href="https://github.com/virustorm/rpg">rpg</a>
+						</div>
 					</div>
 					<img className="mainpage-arrow" src={ArrowRight} alt="arrow" onClick={this.arrowRight} />
 					<div className="mainpage-indicatorDiv">
