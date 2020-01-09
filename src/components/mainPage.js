@@ -4,6 +4,8 @@ import ArrowRight from '../assets/images/arrow-right-solid.svg';
 import iexPic from '../assets/images/iex.png';
 import AerocarPic from '../assets/images/aerocar.png';
 import profilePic from '../assets/images/Kevin_Wang_WD.jpg';
+import RPG1 from '../assets/images/rpg1.png';
+import RPG2 from '../assets/images/rpg2.png';
 
 export default class mainPage extends Component {
 	constructor(props) {
@@ -62,8 +64,13 @@ export default class mainPage extends Component {
 								<img className="mainpage__p2-workImg" src={AerocarPic} alt="aerocar" />
 							</a>
 						</div>
-						<div>
-							<a href="https://github.com/virustorm/rpg">rpg</a>
+						<div className="mainpage__p2-workingDiv">
+							<a href="http://www.kevincywang.com/">
+								<img src={RPG1} alt="RPG1" className="mainpage__p2-workImg" />
+							</a>
+							<a href="http://www.kevincywang.com/">
+								<img src={RPG2} alt="RPG2" className="mainpage__p2-workImg" />
+							</a>
 						</div>
 					</div>
 					<img className="mainpage-arrow" src={ArrowRight} alt="arrow" onClick={this.arrowRight} />
