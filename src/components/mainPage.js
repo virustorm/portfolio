@@ -62,20 +62,59 @@ export default class mainPage extends Component {
 
 					<div className="mainpage__p2-middleDiv">
 						<div className="mainpage__p2-doneDiv">
-							<a href="https://virustorm.github.io/iex/">
-								<img className="mainpage__p2-workImg" src={iexPic} alt="iex" />
+							<a href="https://virustorm.github.io/iex/" className="flip-card">
+								<div className="mainpage__p2-desDiv flip-card-inner">
+									<div className="flip-card-front">
+										<img className="mainpage__p2-workImg" src={iexPic} alt="iex" />
+									</div>
+									<div className="flip-card-back">
+										<section className="mainpage__p2-description">
+											This used IEX Api and shows 100 random companies
+										</section>
+									</div>
+								</div>
 							</a>
-							<a href="https://aerocar.herokuapp.com">
-								<img className="mainpage__p2-workImg" src={AerocarPic} alt="aerocar" />
+							<a href="https://aerocar.herokuapp.com" className="flip-card">
+								<div className="mainpage__p2-desDiv flip-card-inner">
+									<div className="flip-card-front">
+										<img className="mainpage__p2-workImg" src={AerocarPic} alt="aerocar" />
+									</div>
+									<div className="flip-card-back">
+										<section className="mainpage__p2-description">
+											Aerocar is a platform that joins all car-share companies into one map
+										</section>
+									</div>
+								</div>
 							</a>
 						</div>
 						<h1 className="mainpage__p2-title3">Projects i am working on</h1>
 						<div className="mainpage__p2-workingDiv">
-							<a href="http://www.kevincywang.com/">
-								<img src={RPG1} alt="RPG1" className="mainpage__p2-workImg" />
+							<a href="http://www.kevincywang.com/" className="flip-card">
+								<div className="mainpage__p2-desDiv flip-card-inner">
+									<div className="flip-card-front">
+										<img src={RPG1} alt="RPG1" className="mainpage__p2-workImg" />
+									</div>
+									<div className="flip-card-back">
+										<section className="mainpage__p2-description">
+											This is a RPG game that I am working on at the moment, very simple round
+											based leveling game.
+										</section>
+									</div>
+								</div>
 							</a>
-							<a href="http://www.kevincywang.com/">
-								<img src={RPG2} alt="RPG2" className="mainpage__p2-workImg" />
+
+							<a href="http://www.kevincywang.com/" className="flip-card">
+								<div className="mainpage__p2-desDiv flip-card-inner">
+									<div className="flip-card-front">
+										<img src={RPG2} alt="RPG2" className="mainpage__p2-workImg" />
+									</div>
+									<div className="flip-card-back">
+										<section className="mainpage__p2-description">
+											This is another picture of the RPG game that I am working on at the moment,
+											very simple round based leveling game.
+										</section>
+									</div>
+								</div>
 							</a>
 						</div>
 					</div>
