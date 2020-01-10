@@ -51,7 +51,12 @@ export default class mainPage extends Component {
 		} else if (this.state.page === 2) {
 			return (
 				<div className="mainpage__p2">
-					<img className="mainpage-arrow" src={ArrowLeft} alt="arrow" onClick={this.arrowLeft} />
+					<img
+						className="mainpage-arrow mobileArrowLeft"
+						src={ArrowLeft}
+						alt="arrow"
+						onClick={this.arrowLeft}
+					/>
 					<h1 className="mainpage__p2-title">Projects i have done</h1>
 					<h1 className="mainpage__p2-title2">Projects i am working on</h1>
 
@@ -64,6 +69,7 @@ export default class mainPage extends Component {
 								<img className="mainpage__p2-workImg" src={AerocarPic} alt="aerocar" />
 							</a>
 						</div>
+						<h1 className="mainpage__p2-title3">Projects i am working on</h1>
 						<div className="mainpage__p2-workingDiv">
 							<a href="http://www.kevincywang.com/">
 								<img src={RPG1} alt="RPG1" className="mainpage__p2-workImg" />
@@ -73,7 +79,12 @@ export default class mainPage extends Component {
 							</a>
 						</div>
 					</div>
-					<img className="mainpage-arrow" src={ArrowRight} alt="arrow" onClick={this.arrowRight} />
+					<img
+						className="mainpage-arrow mobileArrowRight"
+						src={ArrowRight}
+						alt="arrow"
+						onClick={this.arrowRight}
+					/>
 					<div className="mainpage-indicatorDiv">
 						<div className="mainpage-indicator" />
 						<div className="mainpage-onIndicator" />
