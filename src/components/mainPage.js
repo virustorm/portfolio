@@ -109,7 +109,7 @@ export default class mainPage extends Component {
 										<img src={RPG2} alt="RPG2" className="mainpage__p2-workImg" />
 									</div>
 									<div className="flip-card-back">
-										<section className="mainpage__p2-description">
+										<section className="mainpage__p2-description lastDescText">
 											This is another picture of the RPG game that I am working on at the moment,
 											very simple round based leveling game.
 										</section>
