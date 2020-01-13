@@ -89,6 +89,23 @@
   margin: 0;
 }
 
+.mainpage-footerText {
+  position: absolute;
+  font-size: 20px;
+  color: white;
+  bottom: 10vw;
+  width: 95vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
 .mainpage__p2 {
   background-image: url("../assets/images/jan-pultin-wZUNDmWMvf0-unsplash.jpg");
   background-size: cover;
@@ -205,6 +222,9 @@
     width: 265px;
     height: 265px;
   }
+  .mainpage-footerText {
+    bottom: 5vh;
+  }
   .mainpage__p2-title {
     position: absolute;
   }
@@ -289,6 +309,9 @@
     margin-left: 3vw;
     line-height: 2rem;
     margin-top: 0px;
+  }
+  .mainpage-footerText {
+    bottom: 8vh;
   }
   .mainpage__p2 {
     display: -webkit-box;

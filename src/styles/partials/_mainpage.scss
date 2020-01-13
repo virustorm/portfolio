@@ -66,6 +66,17 @@
 		color: white;
 		margin: 0;
 	}
+	&-footerText {
+		position: absolute;
+		font-size: 20px;
+		color: white;
+		bottom: 10vw;
+		width: 95vw;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		text-align: center;
+	}
 	&__p2 {
 		background-image: url('../assets/images/jan-pultin-wZUNDmWMvf0-unsplash.jpg');
 		background-size: cover;
@@ -151,6 +162,9 @@
 			width: 265px;
 			height: 265px;
 		}
+		&-footerText {
+			bottom: 5vh;
+		}
 		&__p2 {
 			&-title {
 				position: absolute;
@@ -231,6 +245,9 @@
 			margin-left: 3vw;
 			line-height: 2rem;
 			margin-top: 0px;
+		}
+		&-footerText {
+			bottom: 8vh;
 		}
 		&__p2 {
 			display: flex;

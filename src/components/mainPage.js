@@ -146,6 +146,7 @@ export default class mainPage extends Component {
 						</section>
 					</div>
 					<img className="mainpage-arrow" src={ArrowRight} alt="arrow" onClick={this.arrowRight} />
+					<h1 className="mainpage-footerText">Contact Me @ chengyu0718@hotmail.com</h1>
 					<div className="mainpage-indicatorDiv">
 						<div className="mainpage-indicator" />
 						<div className="mainpage-indicator" />
