@@ -17,14 +17,14 @@ export default class mainPage extends Component {
 
 	arrowLeft = () => {
 		if (this.state.page === 1) {
-			this.setState({ page: 3 });
+			this.setState({ page: 4 });
 		} else {
 			this.setState({ page: this.state.page - 1 });
 		}
 	};
 
 	arrowRight = () => {
-		if (this.state.page === 3) {
+		if (this.state.page === 4) {
 			this.setState({ page: 1 });
 		} else {
 			this.setState({ page: this.state.page + 1 });
@@ -43,6 +43,7 @@ export default class mainPage extends Component {
 					<img className="mainpage-arrow" src={ArrowRight} alt="arrow" onClick={this.arrowRight} />
 					<div className="mainpage-indicatorDiv">
 						<div className="mainpage-onIndicator" />
+						<div className="mainpage-indicator" />
 						<div className="mainpage-indicator" />
 						<div className="mainpage-indicator" />
 					</div>
@@ -128,6 +129,7 @@ export default class mainPage extends Component {
 						<div className="mainpage-indicator" />
 						<div className="mainpage-onIndicator" />
 						<div className="mainpage-indicator" />
+						<div className="mainpage-indicator" />
 					</div>
 				</div>
 			);
@@ -146,8 +148,37 @@ export default class mainPage extends Component {
 						</section>
 					</div>
 					<img className="mainpage-arrow" src={ArrowRight} alt="arrow" onClick={this.arrowRight} />
-					<h1 className="mainpage-footerText">Contact Me @ chengyu0718@hotmail.com</h1>
 					<div className="mainpage-indicatorDiv">
+						<div className="mainpage-indicator" />
+						<div className="mainpage-indicator" />
+						<div className="mainpage-onIndicator" />
+						<div className="mainpage-indicator" />
+					</div>
+				</div>
+			);
+		} else if (this.state.page === 4) {
+			return (
+				<div className="mainpage">
+					<img className="mainpage-arrow" src={ArrowLeft} alt="arrow" onClick={this.arrowLeft} />
+					<h1 className="mainpage-aboutMeTitle"> Contact</h1>
+					<div className="mainpage-contactInfoDiv">
+						<h1 className="mainpage-contactH1">Email me at: chengyu0718@hotmail.com</h1>
+						<h1 className="mainpage-contactH1">
+							Check my Projects at:
+							<a className="mainpage-contactLink" href="https://www.github.com/virustorm">
+								https://www.github.com/virustorm
+							</a>
+						</h1>
+						<h1 className="mainpage-contactH1">
+							Check my Profile at:
+							<a className="mainpage-contactLink" href="https://www.linkedin.com/in/kevin-chengyu-wang/">
+								https://www.linkedin.com/in/kevin-chengyu-wang/
+							</a>
+						</h1>
+					</div>
+					<img className="mainpage-arrow" src={ArrowRight} alt="arrow" onClick={this.arrowRight} />
+					<div className="mainpage-indicatorDiv">
+						<div className="mainpage-indicator" />
 						<div className="mainpage-indicator" />
 						<div className="mainpage-indicator" />
 						<div className="mainpage-onIndicator" />
